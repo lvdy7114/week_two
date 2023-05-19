@@ -155,8 +155,8 @@ a {
     flex-direction: column;
   }
 
-  space {
-    margin-top: 100px;
+  .space {
+    margin-top: 25px;
   }
 
   .down-arrow {
@@ -174,22 +174,25 @@ a {
   .design {
       display: flex;
       margin-top: 0;
-      height: 10px;
+      justify-content: flex-start;
+      height: 15px;
       width: 10px;
       color: #3190ad;
       background-color: #3190ad;
-      justify-content: flex-start;
+      gap: 5px;
+    
       
     }
 
     .design1 {
       display: flex;
       margin-top: 0;
-      height: 10px;
+      height: 15px;
       width: 10px;
       color: green;
       background-color: green;
       justify-content: flex-start;
+      gap: 5px;
 
     }
   
@@ -259,6 +262,13 @@ a {
     gap: 540px;
     
     
+  }
+
+  .alignnext {
+    display: flex;
+    justify-content: flex-start;
+    flex-basis: 10px;
+  
   }
 
   #five {
