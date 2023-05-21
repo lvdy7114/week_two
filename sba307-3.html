@@ -1,0 +1,281 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Main</title>
+
+    <link
+      href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/css/bootstrap.min.css"
+      rel="stylesheet"
+      integrity="sha384-KK94CHFLLe+nY2dmCWGMq91rCGa5gtU4mk92HdvYe+M/SXH301p5ILy+dN9+nJOZ"
+      crossorigin="anonymous"
+    />
+    <link 
+    rel="stylesheet" 
+    href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" 
+    integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" 
+    crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="sba307-1style.css" />
+
+    <script
+      src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha3/dist/js/bootstrap.bundle.min.js"
+      integrity="sha384-ENjdO4Dr2bkBIFxQpeoTz1HIcje39Wm4jDKdf19U8gI4ddQ3GYNS7NTKfAdVQSZe"
+      crossorigin="anonymous"
+    ></script>
+ 
+
+    <style>
+       body {
+        padding: 0;
+        margin: 0;
+        background: linear-gradient(-135deg, #c850c0, #4158d0);
+        border: collapse;
+
+        }
+        
+      .flex-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        
+      }
+
+      .center {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin-top: 50px;
+      }
+
+    table {
+    width: 200px;
+    height:300px;
+    text-align: center;
+    border: 20px solid darkorchid;  
+    
+        }
+
+thead, th {
+    width: auto;
+    height: auto;
+    border: 2px solid royalblue;
+
+}
+
+td {
+    border: 2px solid royalblue;
+    background-color: white;
+
+}
+
+td:hover {
+    background: whitesmoke;
+}
+
+td:hover + #teal {
+    background-color: teal;
+    color: white;
+    
+}
+
+td:hover + #purple {
+    background-color: purple;
+    color: white;   
+}
+
+td:hover + #blue {
+    background-color: darkblue;
+    color: white;
+}
+
+.container {
+      height: 100vh;
+      display: grid;
+      gap: 3rem;
+      grid-template-columns: 1fr 1fr 1.5fr;
+      grid-template-rows: 1fr 1fr;
+    }
+
+    .item {
+      font-size: 5rem;
+      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      background-color: blueviolet;
+      display: flex;
+      justify-content: center;
+    }
+
+    h2 {
+      color: #1c87c9;
+    }
+    h2:target {
+      color: white;
+      background: #1c87c9;
+    }
+
+    a {
+        color: whitesmoke;
+    }
+
+    .shadesof {
+        display: flex;
+        flex-direction: row;
+        gap: 5px;
+    }
+
+    .cssanimation {
+  width: 50px;
+  height: 50px;
+  background-color: purple;
+  position: relative;
+  animation-name: example;
+  animation-duration: 5s;
+  animation-timing-function: linear;
+  animation-delay: 2s;
+  animation-iteration-count: infinite;
+  animation-direction: alternate;
+}
+
+@keyframes example {
+  0%   {background-color:red; left:0px; top:0px;}
+  25%  {background-color:purple; left:10px; top:0px;}
+  50%  {background-color:blue; left:10px; top:10px;}
+  75%  {background-color:teal; left:0px; top:10px;}
+  100% {background-color:green; left:0px; top:0px;}
+}
+    </style>
+</head>
+<body>
+    <div class="Main-container">
+        <div class="container-login">
+            <div class="wrap-login">
+
+                <div class="login-pic">
+                    <table>
+                        <tr>
+                        <thead>
+                        <th colspan="4">See colors</th>
+                        </thead>
+                        </tr>
+                    
+                        <tbody>
+                        <tr>
+                        <td>-></td>
+                        <td class id="purple">purple</td>
+                        <td class id="blue">blue</td>
+                        <td class id="teal">teal</td>
+                        </tr>
+                        </tbody>
+                        </table>
+                </div>
+    
+        <div class="flex-container">
+            <div class="card" style="width: 18rem">
+          <img
+            class="card-img-top"
+            src="https://media.istockphoto.com/id/585155968/photo/oil-paints-macro.jpg?s=1024x1024&w=is&k=20&c=QF-at2od9zppX36f92IMIoV2sj_UeBlCcXdR2aAJb1g="
+            alt="Card image cap"
+          />
+          <div class="card-body">
+            <h5 class="card-title">Pick a color</h5>
+            <p class="card-text">
+                <p class="text-center">
+                <ul class="menu">
+                    <li>
+                      <a href="#colors">Choose a color</a></p>    
+                      
+                      <ul>
+                        <li><a href="#purplecolor">Purple</a></li>
+                        <li><a href="#bluecolor">Blue</a></li>
+                        <li><a href="#tealcolor">Teal</a></li>
+                      </ul>
+                    </li>
+                  </ul>
+                  <br>
+            </p>
+          </div>
+        </div>
+      </div>
+   
+     </div>
+        </div>
+        </div>
+
+        <div class="container">
+            <div class="item purple"><h2 id="purplecolor">Purple</h2>🍇
+                <div class="cssanimation"></div> </div>
+            <p>Purple combines the calm stability of blue and the fierce energy of red. The color purple is often associated with royalty, nobility, luxury, power, and ambition. Purple also represents meanings of wealth, extravagance, creativity, wisdom, dignity, grandeur, devotion, peace, pride, mystery, independence, and magic.
+               <br>
+               <br>
+               Go to the <a href id="colors">top</a>.
+            </p>
+            <iframe src="https://giphy.com/embed/TsbkFm63rDE54CEjpe" width="480" height="270" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/tiff-concert-prince-purple-rain-TsbkFm63rDE54CEjpe"></a>
+            <p style="color:purple; font-weight: bold;">The Shades of Purple:</p>
+
+            <div class="shadesof">
+            <p style="color:violet;">/violet/</p>
+            <p style="color:lavender;">/lavender/</p>
+            <p style="color:magenta;">/magenta/</p>
+            <p style="color:plum;">/plum/</p>
+            <p style="color:orchid;">/orchid/</p>
+            <p style="color:blueviolet;">/blueviolet/</p>
+            <p style="color:fuchsia;">/fuchsia/</p>
+            </div>
+            
+            
+        
+            </div>
+        <div class="container">
+          <div class="item blue"><h2 id="bluecolor">Blue</h2>🌊
+            <div class="cssanimation"></div></div>
+          <p>It is the color of the ocean and the sky; it often symbolizes serenity, stability, inspiration, or wisdom. It can be a calming color, and symbolize reliability.
+          <br>
+          <br>
+          Go to the <a href id="colors">top</a>.
+        </p>
+        <iframe src="https://giphy.com/embed/ljSSxlYrMA7ss" width="480" height="280" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/question-editors-ljSSxlYrMA7ss"></a></p>
+        <p style="color:blue; font-weight: bold;">The Shades of Blue:</p>
+            <div class="shadesof">
+                <p style="color:dodgerblue;">/dodger-blue/</p>
+                <p style="color:navy;">/navy/</p>
+                <p style="color:cadetblue">/cadet-blue/</p>
+                <p style="color:cornflowerblue">/cornflower-blue/</p>
+                <p style="color:darkblue;">/dark-blue/</p>
+                <p style="color:deepskyblue;">/deep-sky-blue/</p>
+                <p style="color:midnightblue;">/midnight-blue/</p>
+            </div>
+
+        
+            </div>
+        </div>
+        <div class="container">
+          <div class="item teal"><h2 id="tealcolor">Teal</h2>💎
+            <div class="cssanimation"></div>
+          </div>
+          <p>For many people, teal symbolizes decency and renovation. A shy color, it's composed of shades of blue and green. Its reserved nature promotes clarity, open communication, and practical thinking.
+          <br>
+          <br>
+          Go to the <a href id="colors">top</a>.  
+          </p>
+          <iframe src="https://giphy.com/embed/f8gUgHKGu5iFkB7bmD" width="480" height="298" frameBorder="0" class="giphy-embed" allowFullScreen></iframe><p><a href="https://giphy.com/gifs/audreyhepburn-breakfastattiffanys-hubertdegivenchy-f8gUgHKGu5iFkB7bmD"></a></p>
+          
+          <p style="color:teal; font-weight: bold; background: darkslateblue;">The Shades of Teal:</p>
+          <div class="shadesof">
+              <p style="color:cyan;">/cyan/</p>
+              <p style="color:mediumaquamarine;">/medium-aquamarine/</p>
+              <p style="color:turquoise;">/turquoise/</p>
+              <p style="color:aqua;">/aqua/</p>
+              <p style="color:aquamarine;">/aquamarine/</p>
+              <p style="color:darkseagreen;">/dark-seagreen/</p>
+              <p style="color:mediumturquoise;">/medium-turquoise/</p>
+          </div>
+
+       
+            </div>
+        </div>
+    
+</body>
+</html>
